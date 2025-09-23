@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowDown, Download, Github, Linkedin, Mail, MapPin, Calendar, Code2, Sparkles } from 'lucide-react';
-import krishProfile from '@/assets/krish-profile.jpg';
+import krishProfile from '@/assets/krish-profile-new.jpg';
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
