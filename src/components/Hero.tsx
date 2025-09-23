@@ -112,7 +112,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-xl opacity-20 animate-glow-pulse"></div>
                 
                 <div className="relative">
-                  <img src={krishProfile} alt="Krish Verma - Professional Profile" className="w-full h-auto rounded-2xl object-cover" />
+                  <img src={krishProfile} alt="Krish Verma - Professional Profile" className="w-80 h-auto rounded-2xl object-cover mx-auto" />
                   
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
