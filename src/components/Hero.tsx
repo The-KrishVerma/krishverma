@@ -3,28 +3,35 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowDown, Download, Github, Linkedin, Mail, MapPin, Calendar, Code2, Sparkles } from 'lucide-react';
 import krishProfile from '@/assets/krish-profile.jpg';
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center gradient-hero relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center gradient-hero relative overflow-hidden">
       {/* Enhanced animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-glow-accent/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-glow-purple/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-accent/5 rounded-full blur-2xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-glow-purple/10 rounded-full blur-3xl animate-float" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-accent/5 rounded-full blur-2xl animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
         
         {/* Floating geometric shapes */}
-        <div className="absolute top-20 right-20 text-accent/20 animate-float" style={{animationDelay: '0.5s'}}>
+        <div className="absolute top-20 right-20 text-accent/20 animate-float" style={{
+        animationDelay: '0.5s'
+      }}>
           <Code2 size={24} />
         </div>
-        <div className="absolute bottom-32 left-16 text-accent/20 animate-float" style={{animationDelay: '1.5s'}}>
+        <div className="absolute bottom-32 left-16 text-accent/20 animate-float" style={{
+        animationDelay: '1.5s'
+      }}>
           <Sparkles size={20} />
         </div>
       </div>
@@ -63,20 +70,11 @@ const Hero = () => {
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground glow-accent animate-glow-pulse group"
-                onClick={() => scrollToSection('projects')}
-              >
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground glow-accent animate-glow-pulse group" onClick={() => scrollToSection('projects')}>
                 <Sparkles className="w-4 h-4 mr-2 group-hover:animate-spin" />
                 View My Work
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground group"
-                onClick={() => scrollToSection('contact')}
-              >
+              <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground group" onClick={() => scrollToSection('contact')}>
                 <Mail className="w-4 h-4 mr-2" />
                 Get In Touch
               </Button>
@@ -86,33 +84,18 @@ const Hero = () => {
             <div className="flex items-center gap-4 pt-4">
               <span className="text-sm text-muted-foreground">Connect:</span>
               <div className="flex items-center gap-3">
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2"
-                  asChild
-                >
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
                   <a href="mailto:krishverma060306@gmail.com">
                     <Mail size={18} />
                   </a>
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2"
-                  asChild
-                >
-                  <a href="#" onClick={(e) => e.preventDefault()}>
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                  <a href="#" onClick={e => e.preventDefault()}>
                     <Github size={18} />
                   </a>
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2"
-                  asChild
-                >
-                  <a href="#" onClick={(e) => e.preventDefault()}>
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                  <a href="#" onClick={e => e.preventDefault()}>
                     <Linkedin size={18} />
                   </a>
                 </Button>
@@ -129,11 +112,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-xl opacity-20 animate-glow-pulse"></div>
                 
                 <div className="relative">
-                  <img 
-                    src={krishProfile} 
-                    alt="Krish Verma - Professional Profile" 
-                    className="w-full h-auto rounded-2xl object-cover"
-                  />
+                  <img src={krishProfile} alt="Krish Verma - Professional Profile" className="w-full h-auto rounded-2xl object-cover" />
                   
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
@@ -142,41 +121,20 @@ const Hero = () => {
               
               {/* Enhanced Floating Cards */}
               <Card className="absolute -top-6 -right-6 bg-card/80 backdrop-blur-md border-accent/20 animate-float">
-                <CardContent className="p-4">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 bg-accent/20 rounded-lg">
-                      <Calendar className="w-4 h-4 text-accent" />
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-accent">2024</div>
-                      <div className="text-xs text-muted-foreground">Active</div>
-                    </div>
-                  </div>
-                </CardContent>
+                
               </Card>
               
-              <Card className="absolute -bottom-6 -left-6 bg-card/80 backdrop-blur-md border-accent/20 animate-float" style={{animationDelay: '0.5s'}}>
-                <CardContent className="p-4">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 bg-accent/20 rounded-lg">
-                      <Code2 className="w-4 h-4 text-accent" />
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-accent">IIIT</div>
-                      <div className="text-xs text-muted-foreground">Allahabad</div>
-                    </div>
-                  </div>
-                </CardContent>
+              <Card className="absolute -bottom-6 -left-6 bg-card/80 backdrop-blur-md border-accent/20 animate-float" style={{
+              animationDelay: '0.5s'
+            }}>
+                
               </Card>
               
               {/* New Stats Card */}
-              <Card className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-card/80 backdrop-blur-md border-accent/20 animate-float" style={{animationDelay: '1s'}}>
-                <CardContent className="p-3">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-muted-foreground">Available for Work</span>
-                  </div>
-                </CardContent>
+              <Card className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-card/80 backdrop-blur-md border-accent/20 animate-float" style={{
+              animationDelay: '1s'
+            }}>
+                
               </Card>
             </div>
           </div>
@@ -184,19 +142,12 @@ const Hero = () => {
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <Button 
-            variant="ghost" 
-            size="sm" 
-            className="text-muted-foreground hover:text-accent flex flex-col items-center gap-1"
-            onClick={() => scrollToSection('about')}
-          >
+          <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent flex flex-col items-center gap-1" onClick={() => scrollToSection('about')}>
             <span className="text-xs">Scroll to explore</span>
             <ArrowDown size={16} />
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
