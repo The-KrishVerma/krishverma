@@ -141,7 +141,7 @@ const Hero = () => {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
           <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent flex flex-col items-center gap-2" onClick={() => scrollToSection('about')}>
             <span className="text-sm">Scroll to explore</span>
             <ArrowDown size={20} />
