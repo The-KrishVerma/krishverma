@@ -79,12 +79,12 @@ const Hero = () => {
                   </a>
                 </Button>
                 <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="#" onClick={e => e.preventDefault()}>
+                  <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer">
                     <Github size={18} />
                   </a>
                 </Button>
                 <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="#" onClick={e => e.preventDefault()}>
+                  <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer">
                     <Linkedin size={18} />
                   </a>
                 </Button>
