@@ -2,8 +2,14 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/hooks/use-toast';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  
   const contactInfo = [
     {
       icon: "📧",
@@ -25,10 +31,44 @@ const Contact = () => {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // This would typically handle form submission
-    alert("Thank you for your message! I'll get back to you soon.");
+    setIsLoading(true);
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    const templateParams = {
+      from_name: formData.get('name'),
+      from_email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+    };
+
+    try {
+      await emailjs.send(
+        'service_7y3l2u9', // service_id
+        'template_du5ukui', // template_id
+        templateParams,
+        'Z-WLRcVjZhyrXd7XB' // public_key
+      );
+      
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your message! I'll get back to you soon.",
+      });
+      
+      form.reset();
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Failed to send message",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -86,6 +126,7 @@ const Contact = () => {
                       </label>
                       <Input 
                         id="name"
+                        name="name"
                         type="text" 
                         placeholder="Your name"
                         className="bg-background border-border focus:border-accent"
@@ -98,6 +139,7 @@ const Contact = () => {
                       </label>
                       <Input 
                         id="email"
+                        name="email"
                         type="email" 
                         placeholder="Your email"
                         className="bg-background border-border focus:border-accent"
@@ -112,6 +154,7 @@ const Contact = () => {
                     </label>
                     <Input 
                       id="subject"
+                      name="subject"
                       type="text" 
                       placeholder="Message subject"
                       className="bg-background border-border focus:border-accent"
@@ -125,6 +168,7 @@ const Contact = () => {
                     </label>
                     <Textarea 
                       id="message"
+                      name="message"
                       placeholder="Your message..."
                       rows={5}
                       className="bg-background border-border focus:border-accent resize-none"
@@ -134,9 +178,10 @@ const Contact = () => {
                   
                   <Button 
                     type="submit"
+                    disabled={isLoading}
                     className="w-full bg-accent hover:bg-accent/90 text-accent-foreground glow-accent"
                   >
-                    Send Message
+                    {isLoading ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
