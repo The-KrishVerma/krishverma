@@ -23,17 +23,6 @@ const Hero = () => {
         animationDelay: '2s'
       }}></div>
         
-        {/* Floating geometric shapes */}
-        <div className="absolute top-20 right-20 text-accent/20 animate-float" style={{
-        animationDelay: '0.5s'
-      }}>
-          <Code2 size={24} />
-        </div>
-        <div className="absolute bottom-32 left-16 text-accent/20 animate-float" style={{
-        animationDelay: '1.5s'
-      }}>
-          <Sparkles size={20} />
-        </div>
       </div>
       
       <div className="container mx-auto px-6 py-20 relative z-10">
