@@ -82,7 +82,7 @@ const Hero = () => {
             
             {/* Quick Links */}
             <div className="flex items-center gap-4 pt-4">
-              <span className="text-sm text-muted-foreground">Connect:</span>
+              <span className="text-base text-muted-foreground">Connect:</span>
               <div className="flex items-center gap-3">
                 <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
                   <a href="mailto:krishverma060306@gmail.com">
