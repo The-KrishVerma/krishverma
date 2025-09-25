@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
+
 const About = () => {
   const education = [{
     degree: "B.Tech in Information Technology",
@@ -19,7 +20,9 @@ const About = () => {
     status: "Completed",
     description: "Score: 92%. Completed secondary education with excellent academic performance."
   }];
-  return <section id="about" className="py-20 bg-background">
+
+  return (
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -32,16 +35,18 @@ const About = () => {
           <div className="animate-fade-in">
             <h3 className="text-2xl font-bold mb-6 text-accent">My Story</h3>
             <div className="prose prose-lg text-muted-foreground leading-relaxed">
-              <p className="mb-6">Hi, I’m Krish Verma, a B.Tech IT student at IIIT Allahabad with a strong foundation in data structures, algorithms, and full-stack development. I enjoy turning concepts into code, exploring cutting-edge technologies, and working on projects that challenge me to grow. My interests span across web development, scalable systems, open-source contributions, and software engineering principles.</p>
-              <p className="mb-6">Beyond academics, I thrive in collaborative environments where innovation and teamwork come together. I actively explore open-source projects, participate in coding competitions, and stay engaged with the tech community. My long-term vision is to build solutions that not only solve problems efficiently but also add meaningful value to people’s lives, while seeking opportunities in internships, research, and professional growth.</p>
-              <p>Outside of coding, I’m a curious learner who loves exploring how technology connects with everyday life. Whether it’s experimenting with new tools, sketching ideas for future projects, or following trends in AI, Web3, and system design, I believe creativity fuels innovation. I also enjoy sports and collaborative activities that keep me motivated, disciplined, and balanced — qualities I bring into my technical journey as well.</p>
+              <p className="mb-6">Hi, I'm Krish Verma, a B.Tech IT student at IIIT Allahabad with a strong foundation in data structures, algorithms, and full-stack development. I enjoy turning concepts into code, exploring cutting-edge technologies, and working on projects that challenge me to grow. My interests span across web development, scalable systems, open-source contributions, and software engineering principles.</p>
+              <p className="mb-6">Beyond academics, I thrive in collaborative environments where innovation and teamwork come together. I actively explore open-source projects, participate in coding competitions, and stay engaged with the tech community. My long-term vision is to build solutions that not only solve problems efficiently but also add meaningful value to people's lives, while seeking opportunities in internships, research, and professional growth.</p>
+              <p className="mb-6">My technical journey has been driven by a passion for continuous learning and practical application. From mastering fundamental programming concepts to exploring modern frameworks and architectures, I believe in building a strong foundation while staying adaptable to emerging technologies. I'm particularly interested in areas where technology meets real-world impact, such as sustainable software development and user-centered design approaches.</p>
+              <p>Outside of coding, I'm a curious learner who loves exploring how technology connects with everyday life. Whether it's experimenting with new tools, sketching ideas for future projects, or following trends in AI, Web3, and system design, I believe creativity fuels innovation. I also enjoy sports and collaborative activities that keep me motivated, disciplined, and balanced — qualities I bring into my technical journey as well.</p>
             </div>
           </div>
           
           <div className="animate-slide-up">
             <h3 className="text-2xl font-bold mb-6 text-accent">Education</h3>
             <div className="space-y-6">
-              {education.map((edu, index) => <Card key={index} className="bg-card border-border hover:border-accent/50 transition-all duration-300 group">
+              {education.map((edu, index) => (
+                <Card key={index} className="bg-card border-border hover:border-accent/50 transition-all duration-300 group">
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-3">
                       <h4 className="text-xl font-semibold group-hover:text-accent transition-colors duration-200">
@@ -57,11 +62,14 @@ const About = () => {
                       {edu.description}
                     </p>
                   </CardContent>
-                </Card>)}
+                </Card>
+              ))}
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;
