@@ -3,15 +3,21 @@ const About = () => {
   const education = [{
     degree: "B.Tech in Information Technology",
     institution: "Indian Institute of Information Technology, Allahabad",
-    year: "2022 - 2026",
+    year: "2024 - 2028",
     status: "Current",
-    description: "Pursuing Bachelor's degree with focus on software development, data structures, algorithms, and emerging technologies."
+    description: "CGPA: 8.83 (Top 5% of batch). Pursuing Bachelor's degree with focus on software development, data structures, algorithms, and emerging technologies."
   }, {
-    degree: "Higher Secondary Education",
-    institution: "Senior Secondary School",
-    year: "2020 - 2022",
+    degree: "Class XII (CBSE)",
+    institution: "Police DAV Public School, Ambala City",
+    year: "2022 - 2024",
     status: "Completed",
-    description: "Completed with strong foundation in mathematics and computer science."
+    description: "Score: 93.8%. Completed higher secondary education with strong foundation in mathematics and computer science."
+  }, {
+    degree: "Class X (CBSE)",
+    institution: "DAV Public School, Ambala Cantt",
+    year: "2012 - 2022",
+    status: "Completed",
+    description: "Score: 92%. Completed secondary education with excellent academic performance."
   }];
   return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-6">
