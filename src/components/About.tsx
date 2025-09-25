@@ -32,19 +32,9 @@ const About = () => {
           <div className="animate-fade-in">
             <h3 className="text-2xl font-bold mb-6 text-accent">My Story</h3>
             <div className="prose prose-lg text-muted-foreground leading-relaxed">
-              <p className="mb-6">
-                I'm Krish Verma, a B.Tech IT student at IIIT Allahabad, passionate about solving 
-                real-world problems through technology. With a strong foundation in data structures, 
-                algorithms, and software development, I'm building expertise in web technologies, 
-                system design, and open-source contributions.
-              </p>
-              <p className="mb-6">
-                I actively explore Blockchain, WebRTC, AI, and Machine Learning, staying engaged 
-                with emerging innovations. My approach combines theoretical knowledge with practical 
-                implementation, always seeking to understand not just the "how" but the "why" behind 
-                each technology.
-              </p>
-              <p>Motivated to tackle impactful engineering challenges, I'm eager to collaborate on open-source, full-stack, and scalable system projects, while seeking opportunities for internships, research, and professional growth. I thrive in dynamic environments that encourage continuous learning and innovation, and I aim to contribute solutions that create real-world value.</p>
+              <p className="mb-6">Hi, I’m Krish Verma, a B.Tech IT student at IIIT Allahabad with a strong foundation in data structures, algorithms, and full-stack development. I enjoy turning concepts into code, exploring cutting-edge technologies, and working on projects that challenge me to grow. My interests span across web development, scalable systems, open-source contributions, and software engineering principles.</p>
+              <p className="mb-6">Beyond academics, I thrive in collaborative environments where innovation and teamwork come together. I actively explore open-source projects, participate in coding competitions, and stay engaged with the tech community. My long-term vision is to build solutions that not only solve problems efficiently but also add meaningful value to people’s lives, while seeking opportunities in internships, research, and professional growth.</p>
+              <p>Outside of coding, I’m a curious learner who loves exploring how technology connects with everyday life. Whether it’s experimenting with new tools, sketching ideas for future projects, or following trends in AI, Web3, and system design, I believe creativity fuels innovation. I also enjoy sports and collaborative activities that keep me motivated, disciplined, and balanced — qualities I bring into my technical journey as well.</p>
             </div>
           </div>
           
