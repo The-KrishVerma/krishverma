@@ -1,25 +1,19 @@
 import { Card, CardContent } from '@/components/ui/card';
-
 const About = () => {
-  const education = [
-    {
-      degree: "B.Tech in Information Technology",
-      institution: "Indian Institute of Information Technology, Allahabad",
-      year: "2022 - 2026",
-      status: "Current",
-      description: "Pursuing Bachelor's degree with focus on software development, data structures, algorithms, and emerging technologies."
-    },
-    {
-      degree: "Higher Secondary Education",
-      institution: "Senior Secondary School",
-      year: "2020 - 2022",
-      status: "Completed",
-      description: "Completed with strong foundation in mathematics and computer science."
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-background">
+  const education = [{
+    degree: "B.Tech in Information Technology",
+    institution: "Indian Institute of Information Technology, Allahabad",
+    year: "2022 - 2026",
+    status: "Current",
+    description: "Pursuing Bachelor's degree with focus on software development, data structures, algorithms, and emerging technologies."
+  }, {
+    degree: "Higher Secondary Education",
+    institution: "Senior Secondary School",
+    year: "2020 - 2022",
+    status: "Completed",
+    description: "Completed with strong foundation in mathematics and computer science."
+  }];
+  return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -44,29 +38,20 @@ const About = () => {
                 implementation, always seeking to understand not just the "how" but the "why" behind 
                 each technology.
               </p>
-              <p>
-                Motivated to tackle impactful engineering challenges, I'm eager to collaborate on 
-                open-source, full-stack, and scalable system projects, while seeking opportunities 
-                for internships, research, and professional growth.
-              </p>
+              <p>Motivated to tackle impactful engineering challenges, I'm eager to collaborate on open-source, full-stack, and scalable system projects, while seeking opportunities for internships, research, and professional growth. I thrive in dynamic environments that encourage continuous learning and innovation, and I aim to contribute solutions that create real-world value.</p>
             </div>
           </div>
           
           <div className="animate-slide-up">
             <h3 className="text-2xl font-bold mb-6 text-accent">Education</h3>
             <div className="space-y-6">
-              {education.map((edu, index) => (
-                <Card key={index} className="bg-card border-border hover:border-accent/50 transition-all duration-300 group">
+              {education.map((edu, index) => <Card key={index} className="bg-card border-border hover:border-accent/50 transition-all duration-300 group">
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-3">
                       <h4 className="text-xl font-semibold group-hover:text-accent transition-colors duration-200">
                         {edu.degree}
                       </h4>
-                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        edu.status === 'Current' 
-                          ? 'bg-accent/20 text-accent' 
-                          : 'bg-muted text-muted-foreground'
-                      }`}>
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${edu.status === 'Current' ? 'bg-accent/20 text-accent' : 'bg-muted text-muted-foreground'}`}>
                         {edu.status}
                       </span>
                     </div>
@@ -76,14 +61,11 @@ const About = () => {
                       {edu.description}
                     </p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
