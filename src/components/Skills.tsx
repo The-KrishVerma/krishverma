@@ -198,13 +198,13 @@ const Skills = () => {
 
           {/* Additional stats section */}
           <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-6 bg-card/30 backdrop-blur-md border border-white/10 rounded-2xl px-8 py-4">
+            <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 bg-card/30 backdrop-blur-md border border-white/10 rounded-2xl px-8 py-4">
               <div className="flex items-center gap-2">
                 <Award className="w-5 h-5 text-accent" />
                 <span className="text-sm text-muted-foreground">Total Contests:</span>
                 <span className="font-bold text-foreground">50+</span>
               </div>
-              <div className="h-6 w-px bg-border"></div>
+              <div className="w-16 h-px bg-border sm:w-px sm:h-6"></div>
               <div className="flex items-center gap-2">
                 <Target className="w-5 h-5 text-accent" />
                 <span className="text-sm text-muted-foreground">Problems Solved:</span>
