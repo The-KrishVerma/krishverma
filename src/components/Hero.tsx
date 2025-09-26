@@ -70,47 +70,24 @@ const Hero = () => {
             </div>
             
             {/* Quick Links */}
-            <div className="space-y-4 pt-4">
-              <div className="flex items-center gap-4">
-                <span className="text-base text-muted-foreground">Connect:</span>
-                <div className="flex items-center gap-3">
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                    <a href="mailto:krishverma060306@gmail.com">
-                      <Mail size={18} />
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                    <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer">
-                      <Github size={18} />
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                    <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer">
-                      <Linkedin size={18} />
-                    </a>
-                  </Button>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <span className="text-base text-muted-foreground">Coding:</span>
-                <div className="flex items-center gap-3">
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                    <a href="https://leetcode.com/u/_KrishVerma_/" target="_blank" rel="noopener noreferrer" title="LeetCode Profile">
-                      <Code2 size={18} />
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                    <a href="https://codeforces.com/profile/_KrishVerma_" target="_blank" rel="noopener noreferrer" title="Codeforces Profile">
-                      <Zap size={18} />
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                    <a href="https://www.codechef.com/users/krish_verma636" target="_blank" rel="noopener noreferrer" title="CodeChef Profile">
-                      <Trophy size={18} />
-                    </a>
-                  </Button>
-                </div>
+            <div className="flex items-center gap-4 pt-4">
+              <span className="text-base text-muted-foreground">Connect:</span>
+              <div className="flex items-center gap-3">
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                  <a href="mailto:krishverma060306@gmail.com">
+                    <Mail size={18} />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                  <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer">
+                    <Github size={18} />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                  <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin size={18} />
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
