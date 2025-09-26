@@ -53,7 +53,7 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground glow-accent animate-glow-pulse group" onClick={() => scrollToSection('projects')}>
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground glow-accent group" onClick={() => scrollToSection('projects')}>
                 <Sparkles className="w-4 h-4 mr-2 group-hover:animate-spin" />
                 View My Work
               </Button>
@@ -90,11 +90,10 @@ const Hero = () => {
           <div className="relative animate-slide-up">
             <div className="relative">
               <div className="relative bg-card/50 backdrop-blur-md rounded-3xl p-3 card-shadow border border-white/10">
-                <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-xl opacity-20 animate-glow-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-xl opacity-20"></div>
                 <div className="relative group">
-                  <img src={krishProfile} alt="Krish Verma - Professional Profile" className="w-80 h-auto rounded-2xl object-cover mx-auto transform transition-all duration-500 hover:scale-105 hover:rotate-1 group-hover:shadow-2xl group-hover:shadow-accent/20" style={{ animationDelay: '0.5s' }} />
+                  <img src={krishProfile} alt="Krish Verma - Professional Profile" className="w-80 h-auto rounded-2xl object-cover mx-auto transform transition-all duration-500 hover:scale-105 hover:rotate-1 group-hover:shadow-2xl group-hover:shadow-accent/20 animate-photo-load-in" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl opacity-100 group-hover:opacity-80 transition-opacity duration-300"></div>
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-accent/0 via-accent/10 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
                 </div>
               </div>
               <Card className="absolute -top-6 -right-6 bg-card/80 backdrop-blur-md border-accent/20"></Card>
