@@ -71,21 +71,21 @@ const Hero = () => {
             
             {/* Quick Links */}
             <div className="flex items-center gap-4 pt-4">
-              <span className="text-base text-muted-foreground">Connect:</span>
-              <div className="flex items-center gap-3">
-                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+              <span className="text-lg font-medium text-accent">Connect:</span>
+              <div className="flex items-center gap-4">
+                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
                   <a href="mailto:krishverma060306@gmail.com">
-                    <Mail size={18} />
+                    <Mail size={22} />
                   </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
                   <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer">
-                    <Github size={18} />
+                    <Github size={22} />
                   </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
                   <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin size={18} />
+                    <Linkedin size={22} />
                   </a>
                 </Button>
               </div>
