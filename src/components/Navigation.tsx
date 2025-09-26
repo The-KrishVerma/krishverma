@@ -57,7 +57,7 @@ const Navigation = () => {
             Krish Verma
           </div>
           
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden md:flex items-center space-x-16">
             {navItems.map((item) => (
               <button
                 key={item.id}
