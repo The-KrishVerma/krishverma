@@ -47,10 +47,10 @@ const Skills = () => {
     {
       name: 'LeetCode',
       icon: Code2,
-      achievement: 'Solved 250+ problems',
+      achievement: 'Solved 500+ problems',
       link: 'https://leetcode.com/u/_KrishVerma_/',
       color: 'from-orange-500 to-yellow-500',
-      stats: '250+ Problems Solved'
+      stats: '500+ Problems Solved'
     },
     {
       name: 'Codeforces',
@@ -64,7 +64,6 @@ const Skills = () => {
       name: 'CodeChef',
       icon: Trophy,
       achievement: '1600+ Rated (3 Star)',
-      additionalInfo: 'Global Rank: 236 (Starters 191) • 339 (Starters 196)',
       link: 'https://www.codechef.com/users/krish_verma636',
       color: 'from-green-500 to-emerald-500',
       stats: '3 Star Rating'
@@ -125,7 +124,7 @@ const Skills = () => {
               <span className="text-sm font-medium">Competitive Programming</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
-              Coding Achievements
+              Coding Profiles
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Passionate about problem-solving and algorithmic challenges across multiple platforms
@@ -209,7 +208,7 @@ const Skills = () => {
               <div className="flex items-center gap-2">
                 <Target className="w-5 h-5 text-accent" />
                 <span className="text-sm text-muted-foreground">Problems Solved:</span>
-                <span className="font-bold text-foreground">400+</span>
+                <span className="font-bold text-foreground">500+</span>
               </div>
             </div>
           </div>
