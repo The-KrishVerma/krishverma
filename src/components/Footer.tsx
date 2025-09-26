@@ -11,10 +11,10 @@ const Footer = () => {
           
           <div className="text-center md:text-right">
             <p className="text-muted-foreground">
-              © {currentYear} Krish Verma. Built with passion and technology.
+              © {currentYear} Krish Verma.
             </p>
             <p className="text-sm text-muted-foreground mt-1">
-              B.Tech IT Student • IIIT Allahabad • Tech Enthusiast
+              B.Tech IT Student • IIIT Allahabad
             </p>
           </div>
         </div>
