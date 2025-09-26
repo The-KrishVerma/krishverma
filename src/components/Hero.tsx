@@ -100,11 +100,19 @@ const Hero = () => {
                 {/* Glowing border effect */}
                 <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-xl opacity-20 animate-glow-pulse"></div>
                 
-                <div className="relative">
-                  <img src={krishProfile} alt="Krish Verma - Professional Profile" className="w-80 h-auto rounded-2xl object-cover mx-auto" />
+                <div className="relative group">
+                  <img 
+                    src={krishProfile} 
+                    alt="Krish Verma - Professional Profile" 
+                    className="w-80 h-auto rounded-2xl object-cover mx-auto transform transition-all duration-500 hover:scale-105 hover:rotate-1 animate-float group-hover:shadow-2xl group-hover:shadow-accent/20" 
+                    style={{ animationDelay: '0.5s' }}
+                  />
                   
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
+                  {/* Dynamic overlay gradient with hover effects */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl opacity-100 group-hover:opacity-80 transition-opacity duration-300"></div>
+                  
+                  {/* Dynamic glow effect */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-accent/0 via-accent/10 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
                 </div>
               </div>
               
