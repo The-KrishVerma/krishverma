@@ -62,7 +62,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-accent ${
+                className={`text-base font-medium transition-colors duration-200 hover:text-accent ${
                   activeSection === item.id ? 'text-accent' : 'text-muted-foreground'
                 }`}
               >
