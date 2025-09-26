@@ -15,11 +15,11 @@ const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center gradient-hero relative overflow-hidden">
       {/* Enhanced animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-glow-accent/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-glow-purple/10 rounded-full blur-3xl animate-float" style={{
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-glow-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-glow-purple/10 rounded-full blur-3xl" style={{
         animationDelay: '1s'
       }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-accent/5 rounded-full blur-2xl animate-float" style={{
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-accent/5 rounded-full blur-2xl" style={{
         animationDelay: '2s'
       }}></div>
         
@@ -104,7 +104,7 @@ const Hero = () => {
                   <img 
                     src={krishProfile} 
                     alt="Krish Verma - Professional Profile" 
-                    className="w-80 h-auto rounded-2xl object-cover mx-auto transform transition-all duration-500 hover:scale-105 hover:rotate-1 animate-float group-hover:shadow-2xl group-hover:shadow-accent/20" 
+                    className="w-80 h-auto rounded-2xl object-cover mx-auto transform transition-all duration-500 hover:scale-105 hover:rotate-1 group-hover:shadow-2xl group-hover:shadow-accent/20" 
                     style={{ animationDelay: '0.5s' }}
                   />
                   
@@ -117,18 +117,18 @@ const Hero = () => {
               </div>
               
               {/* Enhanced Floating Cards */}
-              <Card className="absolute -top-6 -right-6 bg-card/80 backdrop-blur-md border-accent/20 animate-float">
+              <Card className="absolute -top-6 -right-6 bg-card/80 backdrop-blur-md border-accent/20">
                 
               </Card>
               
-              <Card className="absolute -bottom-6 -left-6 bg-card/80 backdrop-blur-md border-accent/20 animate-float" style={{
+              <Card className="absolute -bottom-6 -left-6 bg-card/80 backdrop-blur-md border-accent/20" style={{
               animationDelay: '0.5s'
             }}>
                 
               </Card>
               
               {/* New Stats Card */}
-              <Card className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-card/80 backdrop-blur-md border-accent/20 animate-float" style={{
+              <Card className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-card/80 backdrop-blur-md border-accent/20" style={{
               animationDelay: '1s'
             }}>
                 
