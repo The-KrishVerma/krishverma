@@ -11,7 +11,7 @@ const Footer = () => {
           
           <div className="text-center md:text-right">
             <p className="text-muted-foreground">
-              © {currentYear} Krish Verma.
+              © {currentYear} Krish Verma
             </p>
             <p className="text-sm text-muted-foreground mt-1">
               B.Tech IT Student • IIIT Allahabad
