@@ -33,7 +33,7 @@ const CodingProfiles = () => {
   ];
 
   return (
-    <section id="coding-profiles" className="py-20 bg-background/50">
+    <section id="coding-profiles" className="py-20 bg-gradient-to-br from-purple-900/20 to-violet-900/20 backdrop-blur-sm">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full mb-4">
