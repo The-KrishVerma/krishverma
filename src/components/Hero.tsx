@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center gradient-hero relative overflow-hidden">
+    <section id="home" className="h-auto flex items-center gradient-hero relative overflow-hidden pt-24 pb-12">
       {/* Enhanced animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-glow-accent/10 rounded-full blur-3xl"></div>
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-accent/5 rounded-full blur-2xl" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Enhanced Left Content */}
           <div className="animate-fade-in space-y-8">
@@ -70,27 +70,25 @@ const Hero = () => {
             </div>
 
             {/* Quick Links */}
-            <div className="flex items-center gap-4 pt-4">
-              <div className="flex items-center gap-4">
-                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <Github size={22} />
-                    <span>GitHub</span>
-                  </a>
-                </Button>
-                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <Linkedin size={22} />
-                    <span>LinkedIn</span>
-                  </a>
-                </Button>
-                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="mailto:krishverma060306@gmail.com" className="flex items-center gap-2">
-                    <Mail size={22} />
-                    <span>Email</span>
-                  </a>
-                </Button>
-              </div>
+            <div className="flex flex-wrap items-center gap-2 pt-6">
+              <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent hover:bg-accent/10" asChild>
+                <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <Github size={22} />
+                  <span className="text-lg font-medium">GitHub</span>
+                </a>
+              </Button>
+              <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent hover:bg-accent/10" asChild>
+                <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <Linkedin size={22} />
+                  <span className="text-lg font-medium">LinkedIn</span>
+                </a>
+              </Button>
+              <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent hover:bg-accent/10" asChild>
+                <a href="mailto:krishverma060306@gmail.com" className="flex items-center gap-2">
+                  <Mail size={22} />
+                  <span className="text-lg font-medium">Email</span>
+                </a>
+              </Button>
             </div>
           </div>
 
@@ -111,15 +109,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        {!isMobile && (
-          <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-            <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent flex flex-col items-center gap-2" onClick={() => scrollToSection('about')}>
-              <span className="text-base">Scroll to explore</span>
-              <ArrowDown size={20} />
-            </Button>
-          </div>
-        )}
+        
       </div>
     </section>
   );
