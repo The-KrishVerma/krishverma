@@ -53,8 +53,8 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold text-gradient">
-            Krish Verma
+          <div>
+            <img src="https://i.postimg.cc/50Sqj75b/Whats-App-Image-2025-06-30-at-3-07-10-PM.jpg" alt="Krish Verma Logo" style={{ height: '40px', transform: 'scale(1.5)', transformOrigin: 'left' }} />
           </div>
           
           <div className="hidden md:flex items-center space-x-16">
