@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
-import { ArrowDown, Calendar, Github, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
+import { ArrowDown, Calendar, Download, Github, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
 import krishProfile from '@/assets/krish-profile-new.jpg';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -61,25 +61,33 @@ const Hero = () => {
                 <Mail className="w-4 h-4 mr-2" />
                 Get In Touch
               </Button>
+              <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground group">
+                <a href="/Krish_Verma_Resume.pdf" download>
+                  <Download className="w-4 h-4 mr-2" />
+                  Download CV
+                </a>
+              </Button>
             </div>
 
             {/* Quick Links */}
             <div className="flex items-center gap-4 pt-4">
-              <span className="text-lg font-medium text-accent">Connect:</span>
               <div className="flex items-center gap-4">
                 <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="mailto:krishverma060306@gmail.com">
-                    <Mail size={22} />
-                  </a>
-                </Button>
-                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Github size={22} />
+                    <span>GitHub</span>
                   </a>
                 </Button>
                 <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
-                  <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Linkedin size={22} />
+                    <span>LinkedIn</span>
+                  </a>
+                </Button>
+                <Button variant="ghost" size="md" className="text-muted-foreground hover:text-accent hover:bg-accent/10 p-2" asChild>
+                  <a href="mailto:krishverma060306@gmail.com" className="flex items-center gap-2">
+                    <Mail size={22} />
+                    <span>Email</span>
                   </a>
                 </Button>
               </div>
