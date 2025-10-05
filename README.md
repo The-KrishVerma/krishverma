@@ -22,7 +22,7 @@ It represents who I am as a **developer**, my **technical journey**, and the **p
 | Build Tool | [Vite](https://vitejs.dev/) |
 | Styling | [Tailwind CSS](https://tailwindcss.com/) |
 | UI Components | [shadcn/ui](https://ui.shadcn.com/) |
-| Hosting | [Lovable.dev](https://lovable.dev/) |
+| Hosting | [Netlify.app](https://www.netlify.com/) |
 
 ---
 
