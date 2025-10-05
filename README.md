@@ -2,7 +2,7 @@
 
 Welcome to the source code of my **personal portfolio website**, designed and developed to showcase my **projects, skills, and achievements** in web development and technology.  
 
-Visit the live site: **[Portfolio Live Link](https://kv-folio.netlify.app/)** 🚀
+Visit the live site: <a href="https://kv-folio.netlify.app/" target="_blank"><b>Portfolio Live Link</b></a> 🚀
 
 ---
 
