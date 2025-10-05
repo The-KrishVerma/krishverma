@@ -2,7 +2,7 @@
 
 Welcome to the source code of my **personal portfolio website**, designed and developed to showcase my **projects, skills, and achievements** in web development and technology.  
 
-Visit the live site: **[Portfolio Live Link](https://lovable.dev/projects/05828c46-10cc-42f0-8626-de3cde224c32)** 🚀
+Visit the live site: **[Portfolio Live Link](https://kv-folio.netlify.app/)** 🚀
 
 ---
 
